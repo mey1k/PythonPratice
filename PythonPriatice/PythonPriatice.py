@@ -57,13 +57,9 @@ def solution(lines):
             allDelay = timedelta(seconds=float(allLine[2][:-1])) - timedelta(seconds=float(0.001))
 
             if pickedDateTime + sectionTime < allDateTime - allDelay:
-                continue
-            #elif pickedDateTime + sectionTime < allDateTime - allDelay and pickedDateTime + sectionTime < allDateTime:
-             #   continue
+                pass
             elif pickedDateTime > allDateTime:
-                continue
-            #elif pickedDateTime > allDateTime - allDelay and pickedDateTime > allDateTime:
-              #  continue
+                pass
             else:
                 tempAnswer +=1
 
