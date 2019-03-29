@@ -1,0 +1,26 @@
+aa ab ab
+
+ab ba aa aa aa ab
+
+
+aa ab ab
+
+ab ab aa aa aa ba
+
+ab aa
+
+ab ba aa aa aa
+
+
+65536 * 0.4
+
+aa aa aa ab ba aa aa
+
+aa aa ab ba aa aa aa aa
+
+
+aa aa aa aa aa ab ba 7
+
+aa aa aa aa aa aa ab ba 8
+
+
