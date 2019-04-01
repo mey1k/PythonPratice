@@ -28,6 +28,8 @@ def solution(phone_book):
         if not answer:
             break
 
+
+
     return print(answer)
 
 
@@ -53,3 +55,32 @@ solution(["12232332", "12", "222222"])
 #        if p2.startswith(p1):
 #            return False
 #    return True
+
+#-4
+#phone_num={}
+#def check(num):
+#    if(num == 0):
+#        return True
+#    else:
+#        if(phone_num.get(num)==None):
+#            return check(int(num/10))
+#        else:
+#            return False
+
+
+#def solution(phone_book):
+#    change_book = list(map(int, phone_book))
+#    change_book.sort()
+#    for phonenum in change_book:
+#        num = int(phonenum)
+#        if( num < 10):
+#            if(phone_num.get(num)==None):
+#                phone_num[num] = 1 
+#        else:
+#            if(check(num)== True):
+#                phone_num[num] = {num:1} 
+#                continue
+#            else:
+#                return False
+#    answer = True
+#    return answer
