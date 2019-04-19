@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd07a265-8705-454b-8653-4ee93eb49516</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Hash_4.py</StartupFile>
+    <StartupFile>StackQueue_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -37,6 +37,7 @@
     <Compile Include="Jaccard.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="StackQueue_1.py" />
     <Compile Include="Traffic.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
