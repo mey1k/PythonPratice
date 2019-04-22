@@ -15,8 +15,6 @@ def solution(priorities, location):
     for n in range(len(priorities)):
         hashTable.setdefault(n, priorities[n])
 
-    print(max(hashTable, key=hashTable.values))
-
     while(len(hashTable) != 0):
         if list(hashTable)[0] == max(hashTable, key=hashTable.get):
             pivotKey = list(hashTable)[0]
@@ -28,7 +26,6 @@ def solution(priorities, location):
             print(hashTable)
 
     answer = list(sortedHashTable.keys()).index(location) + 1
-
 
     return print(answer)
 
