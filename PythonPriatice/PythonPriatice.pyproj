@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd07a265-8705-454b-8653-4ee93eb49516</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackQueue_3.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -42,6 +42,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackQueue_3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackQueue_4.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test.py">
