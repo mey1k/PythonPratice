@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd07a265-8705-454b-8653-4ee93eb49516</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackQueue_6.py</StartupFile>
+    <StartupFile>heap.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -32,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Hash_4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="heap.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Jaccard.py">
