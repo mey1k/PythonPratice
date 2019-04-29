@@ -3,6 +3,8 @@ def test():
 
     testList = [1,2]
 
+    testList.pop(0)
+
     listList = [[1,2],[3,4]]
 
     ##pop first, last
