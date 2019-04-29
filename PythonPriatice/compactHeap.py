@@ -1,3 +1,4 @@
+#한글 git 옵션 utf-8로 변경 필요하다.
 def parent(array, index):
     return index//2
 
