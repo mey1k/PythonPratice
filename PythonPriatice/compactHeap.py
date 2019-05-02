@@ -1,18 +1,18 @@
 #한글 git 옵션 utf-8로 변경 필요하다.
-def parent(array, index):
+def parent(index):
     return index//2
 
-def leftchild(array, index):
+def leftchild(index):
     return index*2
 
-def rightchild(array, index):
+def rightchild(index):
     return index*2 + 1
 
 def minInsert(array, n): # return minHeap
         array.append(n)
         lastIndex =  len(array) # Last index
-        while lastIndex>1: #자식들과 비교해 가면서 내려가는 함수.
-           parentIndex = parent(array, lastIndex) 
+        while lastIndex>1: #부모와 비교하며 올라가는 함수.
+           parentIndex = parent(lastIndex) 
            if array[lastIndex-1] < array[parentIndex-1]: 
                array[lastIndex-1], array[parentIndex-1] = array[parentIndex-1], array[lastIndex-1]
                lastIndex = parentIndex
@@ -22,29 +22,27 @@ def minInsert(array, n): # return minHeap
 def maxInsert(array, n): # return maxHeap
         array.append(n)
         lastIndex =  len(array) # Last index
-        while lastIndex>1: #자식들과 비교해 가면서 내려가는 함수.
-           parentIndex = parent(array, lastIndex) 
+        while lastIndex>1: #부모를 확인하면서 올라가는 함수
+           parentIndex = parent(lastIndex) 
            if array[lastIndex-1] > array[parentIndex-1]: 
                array[lastIndex-1], array[parentIndex-1] = array[parentIndex-1], array[lastIndex-1]
                lastIndex = parentIndex
            else: # 만약 부모가 더 작으면 거기서 끝.
-              break
+              break 
 
 def minDelete(array):
     array[0], array[len(array) - 1] = array[len(array) - 1] , array[0] #마지막 원소와 root를 바꿔주고
-    #resultHeapSort.append(array[-1]) # heap_Sort Result, O(nlogn)
     array.pop(len(array)-1) #마지막 원소를 제거한다.
     minHeapify(array, 1) #root index에서 heapify를 시작한다.
 
 def maxDelete(array):
     array[0], array[len(array) - 1] = array[len(array) - 1] , array[0] #마지막 원소와 root를 바꿔주고
-    #resultHeapSort.append(array[-1]) # heap_Sort Result, O(nlogn)
     array.pop(len(array)-1) #마지막 원소를 제거한다.
     maxHeapify(array, 1) #root index에서 heapify를 시작한다.
 
 def minHeapify(array, index): #이 함수가 결국 자식들과 비교해 가면서 내려가는 함수입니다.
-    left = leftchild(array, index)
-    right = rightchild(array, index)
+    left = leftchild(index)
+    right = rightchild(index)
     smallest = index #일단은 가장 작은 것을 자신으로 놓고
     if left <= len(array) and array[left - 1] < array[smallest-1]: #만약 왼쪽 자식이 존재하고, 가장 작은 것보다 더 작으면
         smallest = left #가장작은 것은 왼쪽자식이 된다.
@@ -55,8 +53,8 @@ def minHeapify(array, index): #이 함수가 결국 자식들과 비교해 가�
         minHeapify(array, smallest) #recursive call을 하여 내려가서 다시 진행
 
 def maxHeapify(array, index):
-    left = leftchild(array, index)
-    right = rightchild(array, index)
+    left = leftchild(index)
+    right = rightchild(index)
     biggest = index #일단은 가장 큰 것을 자신으로 놓고
     if left <= len(array) and array[left - 1] > array[biggest-1]: #만약 왼쪽 자식이 존재하고, 가장 큰 것보다 더 크면
         biggest = left #가장큰 것은 왼쪽자식이 된다.
