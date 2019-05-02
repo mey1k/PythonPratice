@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd07a265-8705-454b-8653-4ee93eb49516</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>heap_1.py</StartupFile>
+    <StartupFile>DFS.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BFS.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="compactHeap.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DFS.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Hash_1.py">
@@ -44,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Jaccard.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nqueen.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackQueue_1.py" />

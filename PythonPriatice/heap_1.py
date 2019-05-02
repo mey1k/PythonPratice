@@ -87,6 +87,6 @@ def solution(array, k):
     heapq.heapify(array)
     answer = mixDishes(array, k)
     
-    return print(answer)
+    return answer
 
 solution(	[1, 2, 3, 9, 10, 12], 7)
