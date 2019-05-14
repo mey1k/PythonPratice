@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd07a265-8705-454b-8653-4ee93eb49516</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Sort_4.py</StartupFile>
+    <StartupFile>Brute-force_2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BinarySearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Brute-force_2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BST.py">
@@ -103,7 +106,7 @@
     <Compile Include="Sort_3.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Sort_4.py">
+    <Compile Include="Brute-force_1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackQueue_1.py" />
