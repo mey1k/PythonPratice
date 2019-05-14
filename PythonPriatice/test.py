@@ -25,15 +25,21 @@ def test():
     #for n in range(5,5,1):
     #    print(n)
 
-    bitmask = []
+    #bitmask = []
 
-    for n in range(0,8,1):
-        bitmask.append(1<<n)
+    #for n in range(0,8,1):
+    #    bitmask.append(1<<n)
 
-    print(bitmask)
+    #print(bitmask)
 
-    arr = [1,2,3,4]
+    #arr = [1,2,3,4]
     
-    print(used)
+    #print(used)
+
+    list = ['221221221','222','101010']
+
+    list.sort(reverse = True)
+
+    print(list)
 
 test()
