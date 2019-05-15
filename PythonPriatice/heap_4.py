@@ -19,6 +19,7 @@ def solution(operations):
          if words[0] == "I":
              heapq.heappush(minHeap,int(words[1]))
              heapq.heappush(maxHeap,(-int(words[1]),int(words[1])))
+
          elif int(words[1]) == 1 and minHeap:
              minHeap.remove(heapq.heappop(maxHeap)[1])
          elif minHeap:

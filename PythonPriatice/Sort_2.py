@@ -25,6 +25,6 @@ def solution(numbers):
     numbers = list(map(str, numbers))
     numbers.sort(key=lambda x: x*3, reverse=True) # 숫자 문자열 비교 221221 < 222 를 이용하여 정렬
     numbers = int(''.join(numbers))
-    return str(numbers)
+    return print(str(numbers))
 
-solution([3, 30, 34, 5, 9])
+solution([3, 30, 9, 34, 5])

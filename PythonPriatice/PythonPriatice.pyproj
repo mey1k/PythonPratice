@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd07a265-8705-454b-8653-4ee93eb49516</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Brute-force_4.py</StartupFile>
+    <StartupFile>Greedy_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -53,6 +53,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Greedy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Greedy_1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Hash_1.py">
