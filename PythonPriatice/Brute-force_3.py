@@ -54,4 +54,4 @@ solution([[123, 1, 1], [356, 1, 0], [327, 2, 0], [489, 0, 1]])
 
 
 ###
-#first = list(itertools.permutations([1,2,3,4,5,6,7,8,9], 3)) 3자리 중복 없는 모든 리스트
+#first = list(itertools.permutations([1,2,3,4,5,6,7,8,9], 3)) list of 3 digits without duplicates
